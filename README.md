@@ -1,6 +1,6 @@
 ===============================================================================
 
-    Copyright (c) 2006-2024 Wade Alcorn - wade@bindshell.net
+    Credits to: wade@bindshell.net
     Browser Exploitation Framework (BeEF) - https://beefproject.com
     See the file 'doc/COPYING' for copying permission
 
@@ -52,6 +52,8 @@ The `install` script installs the required operating system packages and all the
 ```
 $ ./install
 ```
+
+then check and setup yor config.yaml accordingly!
 
 For full installation details, please refer to [INSTALL.txt](https://github.com/beefproject/beef/blob/master/INSTALL.txt) or the [Installation](https://github.com/beefproject/beef/wiki/Installation) page on the wiki.
 
