@@ -53,7 +53,7 @@ The `install` script installs the required operating system packages and all the
 $ ./install
 ```
 
-then check and setup yor config.yaml accordingly!
+then check and setup your config.yaml accordingly!
 
 For full installation details, please refer to [INSTALL.txt](https://github.com/beefproject/beef/blob/master/INSTALL.txt) or the [Installation](https://github.com/beefproject/beef/wiki/Installation) page on the wiki.
 
