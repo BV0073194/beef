@@ -54,7 +54,7 @@ beef:
         # configure the public-facing connection details here.
 
         public:
-            host: "glowing-invention-vr9vrj4v5gj2w767.app.github.dev" # public hostname/IP address
+            host: "<uri_slug>.app.github.dev" # public hostname/IP address
             port: "3000" # public port (443 if the public server is using HTTPS)
             https: true # true/false
 
