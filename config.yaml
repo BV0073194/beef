@@ -10,15 +10,15 @@ beef:
     # More verbose messages (server-side)
     debug: false
     # More verbose messages (client-side)
-    client_debug: false
+    client_debug: true
     # Used for generating secure tokens
     crypto_default_value_length: 80
 
     # Credentials to authenticate in BeEF.
     # Used by both the RESTful API and the Admin interface
     credentials:
-        user:   "beef"
-        passwd: "beef"
+        user:   "bv007"
+        passwd: "bvuser"
 
     # Interface / IP restrictions
     restrictions:
@@ -53,16 +53,16 @@ beef:
         # If you're using a public domain name, reverse proxy, or port forwarding you must
         # configure the public-facing connection details here.
 
-        #public:
-        #    host: "beef.local" # public hostname/IP address
-        #    port: "443" # public port (443 if the public server is using HTTPS)
-        #    https: false # true/false
+        public:
+            host: "glowing-invention-vr9vrj4v5gj2w767.app.github.dev" # public hostname/IP address
+            port: "3000" # public port (443 if the public server is using HTTPS)
+            https: true # true/false
 
         # If using any reverse proxy you should also set allow_reverse_proxy to true below.
         # Note that this causes the BeEF server to trust the X-Forwarded-For HTTP header.
         # If the BeEF server is directly accessible, clients can spoof their connecting
         # IP address using this header to bypass the IP address permissions/exclusions.
-        allow_reverse_proxy: false
+        allow_reverse_proxy: true
 
         # Hook
         hook_file: "/hook.js"
@@ -88,7 +88,7 @@ beef:
         # Imitate a specified web server (default root page, 404 default error page, 'Server' HTTP response header)
         web_server_imitation:
             enable: true
-            type: "apache" # Supported: apache, iis, nginx
+            type: "nginx" # Supported: apache, iis, nginx
             hook_404: false # inject BeEF hook in HTTP 404 responses
             hook_root: false # inject BeEF hook in the server home page
         # Experimental HTTPS support for the hook / admin / all other Thin managed web services
